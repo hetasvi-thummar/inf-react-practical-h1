@@ -270,3 +270,12 @@ body.scrolled .navbar {
     padding: 40px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .col-reverse {
+    order: 2;
+  }
+  .followus-icon {
+    justify-content: space-evenly;
+  }
+}

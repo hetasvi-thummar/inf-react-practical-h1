@@ -43,9 +43,9 @@ const Home = () => {
               <div className="mb-4">
                 <iframe
                   id="video"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen=""
+                  allowFullScreen=""
                   width="100%"
                   height="260px"
                   src="https://www.youtube.com/embed/SDFUmf8otfc?rel=0&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;"
@@ -149,7 +149,7 @@ const Home = () => {
                         type="select"
                         name="zipcode"
                         control={control}
-                        refs={register}
+                        ref={register}
                         placeholder="Zip Code*"
                       >
                         <option>Zip Code*</option>
@@ -177,7 +177,7 @@ const Home = () => {
           <Row>
             <Col md={7}>
               <Row className="panel-box">
-                <Col md={9}>
+                <Col md={9} className="col-reverse">
                   <h3>Select Car Preference</h3>
                   <div>
                     Provide your car type, make, model and other preferences.
@@ -210,7 +210,7 @@ const Home = () => {
           <Row>
             <Col md={7}>
               <Row className="panel-box">
-                <Col md={9}>
+                <Col md={9} className="col-reverse">
                   <h3>Personalized Offer</h3>
                   <div>Receive multiple bids from the Dealers.</div>
                 </Col>
@@ -238,7 +238,7 @@ const Home = () => {
           <Row>
             <Col md={7}>
               <Row className="panel-box">
-                <Col md={9}>
+                <Col md={9} className="col-reverse">
                   <h3>Exchange Contact Infromation</h3>
                   <div>Like the bid and schedule a test drive.</div>
                 </Col>
@@ -336,7 +336,7 @@ const Home = () => {
                   defaultValue=""
                   placeholder="username"
                   control={control}
-                  ref={register}
+                  refs={register}
                 />
               </FormGroup>
               <FormGroup>
@@ -347,7 +347,7 @@ const Home = () => {
                   defaultValue=""
                   placeholder="password"
                   control={control}
-                  ref={register}
+                  refs={register}
                 />
               </FormGroup>
               <FormGroup>
@@ -377,7 +377,7 @@ const Home = () => {
                   defaultValue=""
                   placeholder="username"
                   control={control}
-                  ref={register}
+                  refs={register}
                 />
               </FormGroup>
               <FormGroup>
@@ -388,7 +388,7 @@ const Home = () => {
                   defaultValue=""
                   placeholder="E-mail"
                   control={control}
-                  ref={register}
+                  refs={register}
                 />
               </FormGroup>
               <FormGroup>
@@ -399,7 +399,7 @@ const Home = () => {
                   defaultValue=""
                   placeholder="password"
                   control={control}
-                  ref={register}
+                  refs={register}
                 />
               </FormGroup>
               <FormGroup>
@@ -428,7 +428,7 @@ const Home = () => {
                     defaultValue=""
                     placeholder="Name*"
                     control={control}
-                    ref={register}
+                    refs={register}
                   />
                 </FormGroup>
               </Col>
@@ -441,7 +441,7 @@ const Home = () => {
                     defaultValue=""
                     placeholder="Email*"
                     control={control}
-                    ref={register}
+                    refs={register}
                   />
                 </FormGroup>
               </Col>
@@ -454,7 +454,7 @@ const Home = () => {
                     defaultValue=""
                     placeholder="Phone*"
                     control={control}
-                    ref={register}
+                    refs={register}
                   />
                 </FormGroup>
               </Col>
@@ -469,7 +469,7 @@ const Home = () => {
                     defaultValue=""
                     placeholder="Your message*"
                     control={control}
-                    ref={register}
+                    refs={register}
                   />
                 </FormGroup>
               </Col>
