@@ -9,8 +9,16 @@ body .navbar {
   z-index: 10;
 }
 
-.navbar.scroll {
-  background-color: white;
+.navbar-white {
+  background-color: white !important;
+}
+
+.signin-btn-white {
+  background-color: transparent !important;
+  border-radius: 0px !important;
+
+  border-color: #ff700a !important;
+  color: #ff700a !important;
 }
 .navbar {
   flex-direction: row-reverse;
@@ -272,10 +280,13 @@ body.scrolled .navbar {
 }
 
 @media screen and (max-width: 768px) {
+  .home-title p {
+    margin-top: 1rem !important;
+  }
   .col-reverse {
     order: 2;
   }
   .followus-icon {
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
   }
 }

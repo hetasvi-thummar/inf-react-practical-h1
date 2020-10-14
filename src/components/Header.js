@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Collapse,
   Navbar,
@@ -17,8 +17,20 @@ const Header = () => {
 
   const toggle = () => setIsOpen(!isOpen);
 
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 100);
+    });
+  }, []);
+
   return (
-    <Navbar className="shadow" light expand="md">
+    <Navbar
+      className={scroll ? "navbar-white shadow" : "navbar shadow"}
+      light
+      expand="md"
+    >
       <NavbarBrand>
         <img src={autodigglogo} alt="autodigg" />
       </NavbarBrand>
@@ -51,7 +63,9 @@ const Header = () => {
         </NavLink>
 
         <Link to="/login" title="login">
-          <Button className="signin-btn">SIGN IN/ REGISTER</Button>
+          <Button className={scroll ? "signin-btn-white " : "signin-btn"}>
+            SIGN IN/ REGISTER
+          </Button>
         </Link>
       </Collapse>
     </Navbar>
