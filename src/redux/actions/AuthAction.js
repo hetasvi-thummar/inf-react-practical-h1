@@ -9,6 +9,7 @@ export const loginData = (data) => {
       .post(`${Config.apiUrl}/test/login`, data)
 
       .then((res) => {
+        localStorage.setItem("jwt", res.data.results.user.token);
         dispatch({
           type: "LOGIN_DATA_SUCCESS",
         });
