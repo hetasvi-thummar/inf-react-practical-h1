@@ -2,11 +2,12 @@ import axios from "axios";
 import { Config } from "../../common";
 
 const jwt = localStorage.getItem("jwt");
-export const carListData = () => {
+export const carListData = (page) => {
+  console.log(page);
   return (dispatch) => {
     dispatch({ type: "CARLIST_DATA_PENDING" });
     axios
-      .get(`${Config.apiUrl}/test/carListing`, {
+      .get(`${Config.apiUrl}/test/carListing?&page=${page}`, {
         headers: {
           Authorization: `Bearer ${jwt}`,
         },

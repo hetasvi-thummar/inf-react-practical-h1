@@ -296,7 +296,39 @@ body.scrolled .navbar {
   .new-request-box {
     background-color: #fff;
     margin-left: 0rem;
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  th {
+    text-align: inherit;
+    width: 0%;
+  }
+  .new-req-header {
+    justify-content: center !important;
+    padding: 0.5rem !important;
+  }
+  .msg-box {
+    position: fixed;
+    border-left: 1px solid lightgray;
+    height: 62% !important;
+    background-color: white;
+    right: 0;
+    width: 180px;
+  }
+  .container {
+    padding: 0 !important;
+  }
+  .msg-icon {
+    display: inline !important;
+  }
+
+  .responsiveTable tbody tr {
+    border: none !important;
+    padding: 0em !important;
+  }
+
+  .responsiveTable thead {
+    padding: 0.2rem;
   }
 }
 
@@ -311,17 +343,15 @@ body.scrolled .navbar {
   padding: 1rem;
 }
 
-.new-req-header-msg {
+/* .new-req-header-msg {
   justify-content: center;
   border-bottom: 1.5px solid lavender;
   padding: 0.5rem;
-}
+} */
 .new-req-container {
   background-color: rgb(247, 249, 252) !important;
 }
-.new-req-header-div {
-  border-right: 1.5px solid lavender;
-}
+
 .user-img {
   border-radius: 3rem;
   width: 30px;
@@ -349,6 +379,28 @@ body.scrolled .navbar {
   text-align: justify;
 }
 
+.navbar {
+  text-align: left;
+}
+
 .bm-overlay {
   background: none !important;
+}
+
+.msg-box {
+  position: fixed;
+  border-left: 1px solid lightgray;
+  height: 100%;
+
+  right: 0;
+  width: 180px;
+}
+
+th {
+  text-align: inherit;
+  width: 9%;
+}
+
+.msg-icon {
+  display: none;
 }
