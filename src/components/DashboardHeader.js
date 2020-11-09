@@ -53,14 +53,13 @@ const DashboardHeader = () => {
         <NavbarToggler onClick={toggle} className="mr-2">
           <FaComments color="white" className="msg-icon" />
         </NavbarToggler>
-
+        )
         <NavbarBrand href="/" className="mr-auto">
           <img src={autodigglogo} alt="autodigg" />
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2">
           <FaBars color="white" />
         </NavbarToggler>
-
         <Collapse isOpen={!collapsed} navbar>
           <Menu pageWrapId={"page-wrap"} className="bg-dark" width={"15%"}>
             <UncontrolledDropdown>
